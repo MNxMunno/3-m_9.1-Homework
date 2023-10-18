@@ -198,14 +198,14 @@ body {
   font-family: Poppins;
 }
 
-.inputlar {
-  padding: 7% 0;
-}
-
 .container {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.inputlar {
+  padding: 6% 0;
 }
 
 .input-content {
@@ -371,149 +371,6 @@ body {
   }
   .only-inputs .inputs .big-input input {
     max-width: 95%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .input-title h2 {
-    font-size: 55px;
-  }
-  .input-title p {
-    font-size: 24px;
-    line-height: 35px;
-  }
-  .only-inputs .inputs {
-    height: 800px;
-  }
-  .only-inputs .inputs .four-inputs {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 32px;
-    grid-row-gap: 24px;
-  }
-  .only-inputs .inputs .big-input label {
-    padding-left: 14%;
-  }
-  .only-inputs .inputs .big-input input {
-    width: 700px;
-  }
-  .only-inputs .inputs .login-button {
-    margin-left: 14%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .input-title p {
-    font-size: 32px;
-    padding: 0;
-  }
-  .only-inputs .inputs {
-    height: 920px;
-  }
-  .only-inputs .inputs .four-inputs {
-    display: block;
-    padding-left: 14%;
-  }
-  .only-inputs .inputs .four-inputs .input-1 {
-    padding-top: 20px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 label {
-    font-size: 28px;
-    padding-bottom: 10px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 input {
-    width: 500px;
-    height: 80px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 input::-moz-placeholder {
-    font-size: 24px;
-    padding: 26px 32px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 input::placeholder {
-    font-size: 24px;
-    padding: 26px 32px;
-  }
-  .only-inputs .inputs .big-input label {
-    font-size: 26px;
-    padding-bottom: 12px;
-  }
-  .only-inputs .inputs .big-input input::-moz-placeholder {
-    font-size: 30px;
-  }
-  .only-inputs .inputs .big-input input::placeholder {
-    font-size: 30px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .input-title h2 {
-    padding-bottom: 20px;
-  }
-  .only-inputs .inputs {
-    height: 1530px;
-  }
-  .only-inputs .inputs .four-inputs {
-    display: block;
-    padding-left: 4%;
-  }
-  .only-inputs .inputs .four-inputs .input-1 {
-    padding-top: 55px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 label {
-    font-size: 50px;
-    padding-bottom: 30px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 input {
-    border-radius: 16px;
-    width: 800px;
-    height: 130px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 input::-moz-placeholder {
-    font-size: 40px;
-    padding-top: 25px;
-  }
-  .only-inputs .inputs .four-inputs .input-1 input::placeholder {
-    font-size: 40px;
-    padding-top: 25px;
-  }
-  .only-inputs .inputs .big-input {
-    text-align: left;
-    padding-left: 4%;
-    padding-top: 10%;
-  }
-  .only-inputs .inputs .big-input label {
-    padding-left: 0;
-    padding-bottom: 30px;
-    font-size: 50px;
-  }
-  .only-inputs .inputs .big-input input {
-    width: 800px;
-    height: 170px;
-    border-radius: 16px;
-  }
-  .only-inputs .inputs .big-input input::-moz-placeholder {
-    display: flex;
-    font-size: 50px;
-  }
-  .only-inputs .inputs .big-input input::placeholder {
-    display: flex;
-    font-size: 50px;
-  }
-  .only-inputs .inputs .login-button {
-    width: 300px;
-    height: 90px;
-    padding: 25px 60px;
-    margin-left: 35px;
-    font-size: 26px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .input-title p {
-    font-size: 40px;
-    line-height: 45px;
-  }
-  .only-inputs .inputs .login-button {
-    width: 300px;
-    height: 120px;
-    font-size: 32px;
   }
 }
 @font-face {
