@@ -1,0 +1,222 @@
+@font-face {
+  font-family: Poppins sans-serif;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+header {
+  background: #1c1e53;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.5);
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+header .nav .menu {
+  display: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header .nav-item {
+  color: #bbbbcb;
+  /* Body 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  transition: 0.5s;
+}
+header .nav-item:hover {
+  color: #fff;
+}
+header .nav-item:nth-child(6) {
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  padding: 16px 48px;
+}
+@media only screen and (max-width: 888px) {
+  header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .nav .menu {
+    display: block;
+  }
+  header .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    top: 75px;
+    right: -100%;
+    width: 100%;
+    height: calc(80vh - 70px);
+    background: #fff;
+    opacity: 0.95;
+    padding: 60px 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .open .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .open .nav .menu {
+    display: block;
+  }
+  .open .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    top: 75px;
+    right: 0%;
+    width: 100%;
+    height: calc(80vh - 50px);
+    background: #1c1e53;
+    opacity: 0.95;
+    padding: 60px 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+  }
+}
+
+footer {
+  background-color: #1c1e53;
+}
+footer .foot_cards {
+  padding-top: 96px;
+  padding-bottom: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+footer .foot_cards .foot_card {
+  max-width: 517px;
+}
+footer .foot_cards .foot_card img {
+  padding-bottom: 23px;
+}
+footer .foot_cards .foot_card h6 {
+  color: #fff;
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+  padding-bottom: 14px;
+}
+footer .foot_cards .foot_card p {
+  max-width: 399px;
+  padding-bottom: 86px;
+  color: var(--White, #fff);
+  /* Label 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+footer .foot_cards .foot_card .text_f {
+  padding-bottom: 28px;
+}
+footer .foot_cards .foot_card .foot-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: #fcd980;
+  padding: 18px 137px 16px 37px;
+}
+footer .foot_cards .foot_card .foot-card .f_card h6 {
+  color: #282938;
+  /* Label 01 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+footer .foot_cards .foot_card .foot-card .f_card a {
+  color: #282938;
+  /* Body 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+footer .foot_cards .foot_card .foot_links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+@media only screen and (max-width: 990px) {
+  footer .foot_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 103px;
+  position: relative;
+}
+
+@media only screen and (max-width: 888px) {
+  body {
+    padding-top: 76px;
+  }
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
