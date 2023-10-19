@@ -7,10 +7,11 @@
   background-color: $color-five;
   .hero_cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 32px;
     padding: 126px 0 128px;
+    flex-wrap: wrap;
   }
   &_card {
     h1 {
@@ -36,7 +37,11 @@
       line-height: 28px; /* 175% */
       padding: 26px 0 48px;
     }
+    .hero-img {
+      width: 100%;
+    }
   }
+
   &_btns {
     display: flex;
     align-items: center;
@@ -58,6 +63,13 @@
     background: $color-four;
     color: $color-five;
   }
+  @media only screen and (max-width: 666px) {
+    .hero_card {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
 }
 
 .about {
@@ -74,13 +86,31 @@
       justify-content: space-between;
       align-items: center;
       padding-top: 64px;
+      flex-wrap: wrap;
       padding-bottom: 128px;
+      gap: 32px;
+
       .hero_card {
         max-width: 405px;
       }
       .card_1 {
         max-width: 843px;
       }
+      .card_1 img {
+        width: 100%;
+      }
+      .hero_card img {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and(max-width:555px) {
+    .about_cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 32px;
     }
   }
 }
@@ -149,6 +179,13 @@
         }
       }
     }
+    @media only screen and (max-width: 666px) {
+      .product-content {
+        h3 {
+          font-size: 13px;
+        }
+      }
+    }
   }
 }
 
@@ -158,7 +195,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 32px;
     .carousel_card {
+      max-width: 843px;
       h5 {
         max-width: 327px;
         color: $color-two;
@@ -193,6 +232,18 @@
         font-weight: 500;
         line-height: 48px; /* 150% */
       }
+    }
+    .c_card {
+      width: 327px;
+    }
+  }
+  @media only screen and (max-width: 888px) {
+    .carousel_cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
     }
   }
 }
