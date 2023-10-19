@@ -914,7 +914,7 @@ footer .foot_cards .foot_card .foot_links {
 .hero_btns {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 .hero-btn {
   border-radius: 41px;
@@ -924,7 +924,7 @@ footer .foot_cards .foot_card .foot_links {
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 177.778% */
-  padding: 16px 56px;
+  padding: 12px 16px;
   transition: 0.5s;
 }
 .hero-btn:hover {
@@ -949,6 +949,7 @@ footer .foot_cards .foot_card .foot_links {
   justify-content: space-between;
   align-items: center;
   padding-top: 64px;
+  flex-wrap: wrap;
   padding-bottom: 128px;
   gap: 32px;
 }
@@ -1024,6 +1025,11 @@ footer .foot_cards .foot_card .foot_links {
   font-weight: 400;
   line-height: 28px; /* 175% */
   text-align: start;
+}
+@media only screen and (max-width: 666px) {
+  .product .product-content .product-content h3 {
+    font-size: 13px;
+  }
 }
 
 .carousel {
